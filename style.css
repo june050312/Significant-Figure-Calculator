@@ -1,0 +1,50 @@
+body{
+    background-color: #181818;
+    color: white;
+    margin: 0px;
+}
+header{
+    background-color: rgb(10, 10, 10);
+    height: 100px;
+    position: relative;
+    font-size: 35px;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 50px;
+}
+.link{
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 50px;
+}
+.body{
+    text-align: center;
+    margin-top: 200px;
+}
+input{
+    height: 50px;
+    width: 220px;
+    background-color: #181818;
+    border: solid 1px white;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+#op{
+    margin: 0px 20px;
+    width: 50px;
+}
+.cal{
+    margin-top: 50px;
+}
+#result{
+    font-size: 100px;
+    margin-top: 50px;
+    color: white;
+}

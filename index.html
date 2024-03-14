@@ -6,22 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-    <style>
-        body{
-            background-color: #181818;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <py-script src="main.py"></py-script>
     <script src="source.js"></script>
 </head>
-    <body>
+<header>
+    <div class="title">
+        유효숫자 계산기
+    </div>
+    <div class="link">
+        링크
+    </div>
+</header>
+<body>
+    <div class="body">
         <div>
             <input type="text" id="f-1"> <input type="text" id="op"> <input type="text" id="f-2">
         </div>
-        <input type="button" value="계산하기" onclick="getResult()">
-        <div id="result">
-            
-        </div>
-    </body>
+        <input type="button" value="계산하기" onclick="getResult()" class="cal">
+        <div id="result"></div>
+    </div>
+</body>
 </html>
