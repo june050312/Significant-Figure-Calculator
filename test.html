@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <title>Document</title>
+    <py-script>
+        def add(x, y):
+            return x + y
+    </py-script>
+    <script>
+        window.onload = function() {
+            console.log(pyscript.interpreter)
+            setTimeout(() => {
+                a = pyscript.interpreter.globals.get('add')
+                console.log(a(1, 2))
+            }, 2000)
+        }
+    </script>
+</head>
+    <body>
+        
+    </body>
+</html>

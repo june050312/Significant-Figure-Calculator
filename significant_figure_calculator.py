@@ -44,6 +44,28 @@ def getDecimalAmount(x, y):
         return len_x
     else:
         return len_y
+    
+def calculate(a, b, op):
+    significantFigure = getSignificantFigure(a, b)
+    decimalAmount = getDecimalAmount(a, b)
+
+    a, b = decimal.Decimal(a), decimal.Decimal(b)
+    result = 0
+
+    if op == '+' or op == '-':
+        if op == '+':
+            result = a + b
+        else:
+            result = a - b
+        print(round(result, decimalAmount))
+    elif op == '*' or op == '/':
+        if op == '*':
+            result = a * b
+        else:
+            result = a / b
+        print(round(result, significantFigure - len(str(int(result)))))
+    else:
+        print('Operand Error')
 
 print('측정된 모든 숫자를 입력해주세요.')
 a = input()
@@ -51,23 +73,4 @@ b = input()
 print('+, -, *, / 중에 입력해주세요.')
 op = input()
 
-significantFigure = getSignificantFigure(a, b)
-decimalAmount = getDecimalAmount(a, b)
-
-a, b = decimal.Decimal(a), decimal.Decimal(b)
-result = 0
-
-if op == '+' or op == '-':
-    if op == '+':
-        result = a + b
-    else:
-        result = a - b
-    print(round(result, decimalAmount))
-elif op == '*' or op == '/':
-    if op == '*':
-        result = a * b
-    else:
-        result = a / b
-    print(round(result, significantFigure - len(str(int(result)))))
-else:
-    print('Operand Error')
+calculate(a, b, op)
