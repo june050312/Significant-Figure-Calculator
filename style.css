@@ -22,6 +22,9 @@ header{
     transform: translate(0, -50%);
     margin-right: 50px;
 }
+.github-link{
+    width: 30px;
+}
 .body{
     text-align: center;
     margin-top: 200px;
@@ -47,4 +50,32 @@ input{
     font-size: 100px;
     margin-top: 50px;
     color: white;
+}
+li{
+    text-align: left;
+}
+.explain{
+    width: 420px;
+    margin: 210px auto;
+}
+.content{
+    margin-top: 70px;
+}
+footer{
+    margin-top: 200px;
+    background-color: rgb(10, 10, 10);
+    height: 100px;
+    position: relative;
+}
+.copyright, .powered-by{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: grey;
+}
+.copyright{
+    margin-left: 30px;
+}
+.powered-by{
+    margin-left: 230px;
 }
